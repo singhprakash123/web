@@ -1,0 +1,185 @@
+body{
+	background-image:  url("image/background.jpg");
+	background-repeat: no-repeat;
+	background-position: fixed;
+	background-size: cover;
+}
+.menubar a{
+	text-decoration: none;
+	color: grey;
+	font-size: 17px;
+	font-weight: bold;
+}
+.menubar{
+	text-align: center;
+	padding: 1% 20%;
+}
+.menubar ul{
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+}
+#profile img{
+	width: 400px;
+	height: 500px;
+}
+#profile{
+	margin-left: 40%;
+}
+.menubar ul li{
+	padding: 1%;
+	margin: 0% 1%;
+	border: 2px solid black;
+	border-radius: 15px;
+	width: 100px;
+	background-color:skyblue;
+}
+
+.section{
+	margin: 1% 2%;
+	display: flex;
+	flex-direction: column;
+}
+.row{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.section img{
+	height: 100px;
+	width: 100px;
+}
+
+.contact{
+ 		display: flex;
+ 		flex-direction: row;
+ 		justify-content: space-around;
+ }
+
+
+
+
+footer{
+	font-size: 17px;
+	text-align: center;
+	color: darkblue;
+	font-weight: bold;
+	margin: 1% 2%;
+}
+.left img{
+	width:300px;
+	height: 500px;
+}
+.about{
+	display: flex;
+	flex-direction: row;
+
+}
+.left{
+	width:30%;
+	margin-left: 2%;
+}
+.right{
+	padding: 1%;
+	text-align: justify;
+	width: 45%;
+	height:400px;
+	background-color: grey;
+	font-size: 20px;
+ 	 animation: magic 4s linear 0.1s ;
+}
+.cv{
+	display: flex;
+	flex-direction: row;
+	background-color: grey;
+	font-size: 22px;
+	text-align: justify;
+	width: 700px;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 1%;
+}
+.menubar a:hover{
+	transition-duration: .5s;
+	font-size: 20px;
+	color:red;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.row a:hover{
+	transition-duration: 1s;
+
+	transform: rotate(360deg);
+}
+.title{
+	
+	color: darkblue;
+	}
+
+@keyframes magic {
+  from {
+ 
+   height: 10px;
+
+  }
+  to {
+  
+    height: 400px;
+  }
+}
+} 
+.edu{
+	display: flex;
+	flex-direction: column;
+	background-color: grey;
+	font-size: 22px;
+	text-align: center;
+	width: 500px;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 1%;
+}
+.section img:hover{
+	transition-duration: 2s;
+	boder:1px solid black;
+	border-radius: 50%;
+}
+
+ @media all and (max-width: 600px) {
+
+
+.menubar ul{
+	flex-direction: column;
+	text-align: center;
+	
+ 	}
+ 	.contact{
+ 		flex-direction: column;
+ 	}
+ 	.menubar ul li{
+ 		margin-bottom: 5px;
+ 		width: auto;
+ 	}
+ 	.section{
+ 		flex-direction: row;
+ 		justify-content: space-around;
+ 	}
+ 	.row{
+ 		flex-direction: column;
+ 	}
+
+ 	#profile{
+ 		margin-left: 1%;
+ 		margin-right:1%;
+ 	}
+ 	.contactpage{
+ 		border: 3px solid white;
+ 		border-radius: 15px;
+ 	}
+ 	#profile img{
+	width: 300px;
+	height: 400px;
+}
+
+
+ }
